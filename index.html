@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Memory Game 🧠</title>
+
+  <!-- Styles & Manifest -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#222222" />
+
+  <!-- PWA Icons (optional but good practice) -->
+  <link rel="icon" href="icons/icon-192.png" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+</head>
+<body>
+
+  <!-- Dark Mode Toggle -->
+  <button id="theme-toggle">🌙 Dark Mode</button>
+
+  <!-- Title -->
+  <h1>Memory Game 🧠</h1>
+
+  <!-- Theme Selector -->
+  <div class="theme-select">
+    <label for="theme">Theme:</label>
+    <select id="theme">
+      <option value="food">🍕 Food</option>
+      <option value="pokemon">⚡ Pokémon</option>
+      <option value="marvel">🦸 Marvel</option>
+      <option value="animals">🐶 Animals</option>
+    </select>
+  </div>
+
+  <!-- Info Panel -->
+  <div class="info-panel">
+    <span id="moves">Moves: 0</span>
+    <span id="timer">Time: 0s</span>
+    <span id="best">Best: -</span>
+  </div>
+
+  <!-- Difficulty Selector -->
+  <div class="difficulty">
+    <label for="level">Difficulty:</label>
+    <select id="level">
+      <option value="easy" selected>Easy (4x4)</option>
+      <option value="hard">Hard (6x6)</option>
+    </select>
+  </div>
+
+  <!-- Restart -->
+  <button id="restart">🔄 Restart Game</button>
+
+  <!-- Game Board -->
+  <div class="game-board" id="game-board"></div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
